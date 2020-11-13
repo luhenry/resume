@@ -1,0 +1,92 @@
+\documentclass[11pt, a4paper]{moderncv}
+
+\moderncvtheme[green]{classic}
+
+\usepackage[utf8]{inputenc}
+\usepackage[american]{babel}
+\usepackage{nth}
+\usepackage[top=1.1cm, bottom=2cm, left=1.2cm, right=1.2cm]{geometry}
+\usepackage{eurosym}
+\usepackage{tikz}
+
+\setlength{\hintscolumnwidth}{3.5cm}
+
+% Disable hyphenation of words
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\linespread{1.1}
+
+\firstname{Ludovic}
+\familyname{Henry}
+\address{1 Nouvelle Cote}{29241, Locquirec, France}
+\email{hi@ludovic.dev}
+\homepage{goo.gl/3CxkwO}
+\mobile{+33 6 73 40 46 91}
+
+\begin{document}
+\maketitle
+
+\section{Work Experience}
+\cventry{Apr 2019 - Today}{Senior Software Engineer}{Microsoft Corp, Seattle, WA, USA}{}{}{Performance and platform support enhancement for the OpenJDK}
+	\cvlistitem{\textbf{\textit{Hardware Acceleration:}} support the OpenJDK Panama project on the Vector API}
+	\cvlistitem{\textbf{\textit{ARM64 Support:}} port and upstream the OpenJDK to ARM64 on Windows and macOS; work with relevant organizations across Microsoft to improve ARM64 support}
+	\cvlistitem{\textbf{\textit{Compiler Optimizations:}} accelerate specific and generic workloads driven by customers needs}
+	\cvlistitem{\textbf{\textit{Professional Services:}} support customers on their use of the OpenJDK to improve the performance of their product}
+\cventry{Apr 2017 - Mar 2019}{Senior Software Engineer Manager}{Microsoft Corp, Cambridge, MA, USA}{}{}{Management of the Mono Runtime team}
+	\cvlistitem{\textbf{\textit{Interpreter:}} development and productization to support full .NET features on constrained platforms like iOS/tvOS/watchOS, PS4 and Xbox One}
+	\cvlistitem{\textbf{\textit{LLVM:}} enhancing the integration to LLVM, enabling more LLVM optimizations, and implementing more optimizations in Mono}
+	\cvlistitem{\textbf{\textit{Concurrent GC:}} release and integration to Xamarin products, allowing for measurable shorter pause times}
+	\cvlistitem{\textbf{\textit{Crash Reporter:}} implement telemetry to improve the quality of VS for Mac}
+	\cvlistitem{\textbf{\textit{Open Source Community Engagement:}} improve and create channels of communication and collaboration}
+	\cvlistitem{\textbf{\textit{WebAssembly:}} participation to the Working Group}
+\cventry{Jul 2016 - Apr 2017}{Software Engineer 2}{Microsoft Corp, Cambridge, MA, USA}{}{}{Reliability and performance enhancement of the Mono runtime}
+    \cvlistitem{\textbf{\textit{Hybrid AOT:}} implementation of a new AOT compilation mode for Android}
+\cventry{Mar 2015 - Jul 2016}{Runtime Engineer}{Xamarin Ltd, London, UK}{}{}{Reliability and performance enhancement of the Mono runtime}
+    \cvlistitem{\textbf{\textit{ThreadPool:}} implementation of Fast Fourier Transformation based heuristic}
+    \cvlistitem{\textbf{\textit{GSoC:}} mentoring of a student, integrate CoreCLR GC to Mono}
+    \cvlistitem{\textbf{\textit{Cooperative GC:}} implementation of a cooperative thread suspending mechanism}
+\cventry{Aug 2014 - Mar 2015}{Runtime Performance Engineer}{Xamarin Inc, Boston, MA, USA}{}{}{}
+\cventry{Mar 2014 - Aug 2014}{Runtime Performance Intern}{Xamarin Inc, Boston, MA, USA}{}{}{Performance enhancement of the Mono Runtime}
+    \cvlistitem{\textbf{\textit{JIT:}} delegate trampoline caching, 5\% speed improvement}
+    \cvlistitem{\textbf{\textit{GC:}} gray queue, 10\% speed improvement}
+\cventry{Feb 2012 - Sep 2013}{Data Analysis Consultant}{Mogreet Inc, Los Angeles, CA, USA}{}{}{Development and support of the statistics computing platform with Hadoop (reduction of the computation time by 80\%), and development of a recommendation engine for their ad campaigns}
+
+\pagebreak
+
+\section{Technical Skills}
+\cventry{Platforms}{macOS, Windows, Linux on x86 and ARM}{Deep understanding of platforms APIs and intricacies}{}{}{}
+\cventry{Languages}{C/C++, C\#, Java, Scala, PHP, Python, Ruby, Prolog}{}{}{}{}
+\cventry{Tools}{Deep Learning}{TensorFlow, Keras}{}{}{}
+    \cventry{}{Application}{Apache, Nginx, Django, Rails, Symfony}{}{}{}
+    \cventry{}{Hadoop}{HDFS, MapReduce, Hive, Streaming}{}{}{}
+    \cventry{}{Database}{Oracle, PostGreSQL, MySQL, SQLite}{}{}{}
+    \cventry{}{NoSQL}{MongoDB, Cassandra}{}{}{}
+    \cventry{}{Other}{RSync, SSH, Git}{}{}{}
+
+\section{Education}
+\cventry{Sep 2017 - Jun 2021}{Management Graduate Degree}{\httplink[Harvard Extension School]{https://www.extension.harvard.edu/}}{}{}{}
+\cventry{Sep 2017 - Aug 2019}{Strategic Management Certificate}{\httplink[Harvard Extension School]{https://www.extension.harvard.edu/}}{}{}{Creating and Leading Team Dynamics, Data Mining for Business, Investment Theory and Applications, and Marketing Management}
+\cventry{Sep 2018}{Deep Learning Specialization}{\httplink[Coursera]{https://www.coursera.org/account/accomplishments/specialization/T9XNXGME55E5}}{}{}{}
+\cventry{Sep 2008 - Sep 2014}{Software Engineering Master}{\httplink[University of Technology of Belfort-Montbéliard]{https://www.utbm.fr/}, Belfort, France}{}{}{\textit{Main courses:} Optimization and Operational Research, OS: Principles and IPC, Multi-Agent Systems, Graph Theory and Applications, AI: Fundamental Concepts and DSLs, Advanced Algorithmic}
+
+\section{Volunteering Work}
+\cventry{Sport Association}{600 students, 30 sports per semester}{}{}{}{}
+    \cvlistitem{\textbf{\textit{President}}}
+\cventry{Student Association}{1000 students, 45 clubs, 516 k\euro/year budget}{}{}{}{}
+    \cvlistitem{\textbf{\textit{Living Area Manager:}} 18 k\euro/month turnover}
+    \cvlistitem{\textbf{\textit{IT Manager:}} establishement and maintenance of the Internet connection for the 250 rooms students' dorm}
+\cventry{FIMU}{International University Music Festival}{welcoming 85k people/year}{}{}{}{}
+    \cvlistitem{\textbf{\textit{Attendees Welcoming Manager}}, in charge of 65 volunteers}
+
+\section{Languages}
+\cventry{French}{Native}{}{}{}{}{}
+\cventry{English}{Fluent}{}{}{}{}
+\cventry{Other}{Portuguese, German}{}{}{}{}{}
+
+\section{Events}
+\cventry{Code Competitions}{UTBM vs St. Olaf}{}{}{}{\textit{Path Finding} and \textit{Travelling Salesman Problem}; finished \nth{2} out of 18 teams}
+\cventry{Hackathons}{Hollywood Hack Day}{Los Angeles, USA}{Jun 2012}{}{Video List: a Watch It Later web app; finished \nth{3}}
+\cventry{Startup Weekend}{UTBM}{Belfort, FR}{Nov 2012}{}{GameUp: gamification platform for every day use; finished \nth{1}}
+
+\end{document}
